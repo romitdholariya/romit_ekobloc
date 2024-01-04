@@ -1,0 +1,40 @@
+{
+ "cards": [
+  {
+   "card": "Dispatch Quantity"
+  },
+  {
+   "card": "Dispatch Net Total"
+  },
+  {
+   "card": "Pending Orders"
+  },
+  {
+   "card": "Received Amount"
+  },
+  {
+   "card": "Purchase Order"
+  },
+  {
+   "card": "Total Purchase"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Delivery Trends",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-06-22 00:51:15.824956",
+ "dashboard_name": "The Block Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-06-22 11:08:31.458451",
+ "modified_by": "Administrator",
+ "module": "The Block",
+ "name": "The Block Dashboard",
+ "owner": "Administrator"
+}

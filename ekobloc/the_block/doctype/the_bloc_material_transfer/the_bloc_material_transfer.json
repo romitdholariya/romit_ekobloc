@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-12 16:26:50.663497",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_ssowl",
+  "posting_date",
+  "section_break_yhsl4",
+  "item_code",
+  "column_break_4ywfl",
+  "item_name",
+  "column_break_las0f",
+  "uom",
+  "column_break_zoawb",
+  "available_stock",
+  "column_break_6az7b",
+  "issue_qty",
+  "section_break_il49i",
+  "the_bloc_table_material_transfer",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "the_bloc_table_material_transfer",
+   "fieldtype": "Table",
+   "label": "The Bloc Table Material Transfer",
+   "options": "The Bloc Table Material Transfer"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "THE Bloc Material Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MT-BLOC-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_ssowl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "section_break_yhsl4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4ywfl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_las0f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_il49i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zoawb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.opening_stock",
+   "fieldname": "available_stock",
+   "fieldtype": "Data",
+   "label": "Available Stock"
+  },
+  {
+   "fieldname": "column_break_6az7b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue_qty",
+   "fieldtype": "Data",
+   "label": "Issue Qty"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-20 17:46:46.037856",
+ "modified_by": "Administrator",
+ "module": "The Block",
+ "name": "THE Bloc Material Transfer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

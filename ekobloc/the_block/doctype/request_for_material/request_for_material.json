@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MAT-{MM}-{YYYY}-{######}",
+ "creation": "2023-07-27 10:06:49.647885",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction_date",
+  "column_break_bw7xq",
+  "required_by",
+  "section_break_1tw6k",
+  "items",
+  "section_break_n8nco",
+  "company",
+  "request_no",
+  "address",
+  "delivery_address",
+  "column_break_r2syo",
+  "customer",
+  "billing_address",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date"
+  },
+  {
+   "fieldname": "required_by",
+   "fieldtype": "Date",
+   "label": "Required By"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Request For Material",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Table For Material"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_bw7xq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1tw6k",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.primary_address",
+   "fieldname": "billing_address",
+   "fieldtype": "Read Only",
+   "label": "Billing Address"
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Read Only",
+   "label": "Delivery Address"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "Request No"
+  },
+  {
+   "fieldname": "section_break_n8nco",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_r2syo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-11 18:35:44.575826",
+ "modified_by": "Administrator",
+ "module": "The Block",
+ "name": "Request For Material",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

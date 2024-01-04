@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ekobloc *.css
+recursive-include ekobloc *.csv
+recursive-include ekobloc *.html
+recursive-include ekobloc *.ico
+recursive-include ekobloc *.js
+recursive-include ekobloc *.json
+recursive-include ekobloc *.md
+recursive-include ekobloc *.png
+recursive-include ekobloc *.py
+recursive-include ekobloc *.svg
+recursive-include ekobloc *.txt
+recursive-exclude ekobloc *.pyc
